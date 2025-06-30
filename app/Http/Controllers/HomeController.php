@@ -9,28 +9,24 @@ class HomeController extends Controller
     public function index()
     {
 
-        $featuredWorks = [
-            [
-                'image' => asset('assets/images/project1.jpg'),
-                'title' =>'Update E-commerce Website',
-                'short_description' =>'A fully responsive online store with payment integration.'
-            ],
-            [
-                'image' => asset('assets/images/project1.jpg'),
-                'title' =>'Mobile App Design',
-                'short_description' =>'UI/UX design for a fitness tracking application.'
-            ],
-            [
-                'image' =>asset('assets/images/project1.jpg'),
-                'title' =>'Corporate Website',
-                'short_description' =>'A modern website for a financial services company.'
-            ],
-            [
-                'image' =>asset('assets/images/project1.jpg'),
-                'title' =>'New Corporate Website',
-                'short_description' =>'A modern website for a financial services company.'
-            ],
-        ];
+    $featuredWorks = [
+    [
+        'image' => asset('assets/images/restaurant-site.png'), // Replace with your image later
+        'title' => 'Restaurant Website',
+        'short_description' => 'Modern website for a local restaurant with menu and reservation system.'
+    ],
+    [
+        'image' => asset('assets/images/event-site.png'), // Replace with your image later
+        'title' => 'Event Management Website',
+        'short_description' => 'Interactive event site featuring schedules, registration, and gallery.'
+    ],
+    [
+        'image' => asset('assets/images/cosmetic-site.png'), // Replace with your image later
+        'title' => 'Cosmetic Clinic Website',
+        'short_description' => 'Elegant and clean clinic site with services, appointment system, and testimonials.'
+    ]
+];
+
 
         return view('home', compact('featuredWorks'));
     }
